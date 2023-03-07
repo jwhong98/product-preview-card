@@ -25,11 +25,17 @@
   <body>
     <main class="product-container">
       <div class="img-container">
-        <img
-          src="images/image-product-mobile.jpg"
-          alt="product"
-          class="product-img"
-        />
+        <picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="images/image-product-desktop.jpg"
+          />
+          <img
+            src="images/image-product-mobile.jpg"
+            alt="product"
+            class="product-img"
+          />
+        </picture>
       </div>
       <div class="text-container">
         <p class="category">PERFUME</p>
